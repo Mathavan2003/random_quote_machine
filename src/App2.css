@@ -1,0 +1,158 @@
+.head{
+  padding: 1.5rem;
+  color:#fff;
+  justify-content: center;
+  text-align: center;
+  background-color: #333;
+  height: 60px;
+  margin-top: -1.5rem;
+  font-family: 'Redressed', cursive;
+}
+.foot{
+  /* margin-top: 10%;
+  padding-top:10px; */
+  color: #fff;
+  justify-content:center;
+  text-align: center;
+  /* align-self: flex-end; */
+  background-color: #333;
+  height:auto;
+  padding-bottom: 10px;
+  font-family: 'Redressed', cursive;
+}
+img {
+  position: absolute;
+  animation: movePicture 10s ease-in-out infinite;
+}
+
+@keyframes movePicture {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 90%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 30%;
+  }
+  75% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 90;
+  }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+        background: url('Einstein.jpg') no-repeat center center fixed;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+  }
+  
+  #quote-box {
+    /* background-color: grey; */
+    box-shadow: -3px -3px 30px #64797e;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-image: repeating-conic-gradient(grey 10%,black 20%);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  #quote-box:hover{
+    background-image: repeating-conic-gradient(black 10%,grey 20%); 
+  }
+  #wrapper {
+    background: #fff;
+    position: relative;
+    margin-top: 1.5rem;
+    padding: 0.3rem 2rem;
+    border-radius: 15px;
+    box-shadow: -3px -3px 30px #64797e;
+  }
+  #wrapper:hover{
+    background: black;
+  }
+  #text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+
+  }
+  #wrapper:hover #text{
+      color: #fff;
+  }
+
+  #author {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+  }
+  #wrapper:hover #author{
+    color: #fff;
+} 
+  #new_quote {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background: #fff;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+    border-radius: 15px;
+    
+  }
+  #new_quote:hover{
+    background:black;
+    color:#fff;
+  }
+  .random-movement {
+    position: relative;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes move {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    50% {
+      top: calc(100vh - 100px);
+      left: calc(100vw - 100px);
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  
+ /* container */
+ .container{
+
+  height: 150vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+ }
